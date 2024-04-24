@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
-  RouterProvider,
+    createBrowserRouter,
+    RouterProvider,
 } from "react-router-dom";
 import App from './App';
 import AuthProvider from './AuthProvider/AuthProvider';
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <App></App>,
-        loader: () => fetch('http://localhost:4000/coffee'),
+        loader: () => fetch('https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/coffee'),
       },
       {
         path: 'addCoffee',
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: 'updateCoffee/:id',
         element: <UpdateCoffee></UpdateCoffee>,
-        loader: ({ params }) => fetch(`http://localhost:4000/coffee/${params.id}`)
+        loader: ({ params }) => fetch(`https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/coffee/${params.id}`)
       },
       {
         path: '/singup',
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       {
         path: '/users',
         element: <Users></Users>,
-        loader: ()=> fetch('http://localhost:4000/users')
+        loader: ()=> fetch('https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/users')
       }
     ]
   }
