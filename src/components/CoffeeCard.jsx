@@ -5,7 +5,6 @@ import Swal from 'sweetalert2';
 const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
     const { _id, name, photoUrl, supplier, taste, quantity, details } = coffee;
     const handleDelete = _id => {
-        console.log(_id);
         Swal.fire({
             title: "Are you sure?",
             text: "You won't be able to revert this!",
@@ -60,7 +59,7 @@ const CoffeeCard = ({ coffee, coffees, setCoffees }) => {
 CoffeeCard.propTypes = {
     coffee: PropTypes.object,
     coffees: PropTypes.array,
-    setCoffees: PropTypes.array,
+    setCoffees: PropTypes.func,
 }
 
 export default CoffeeCard;
