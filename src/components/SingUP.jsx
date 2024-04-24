@@ -15,7 +15,7 @@ const SingUP = () => {
             console.log(result.user);
             const creationTime = result.user?.metadata?.creationTime
             const user = {email, creationTime: creationTime};
-            fetch(`https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/users`,{
+            fetch(`https://coffee-store-server-7sx1m951r-saiful-islams-projects-e6e7facb.vercel.app/users`,{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

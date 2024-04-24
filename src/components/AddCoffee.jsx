@@ -14,7 +14,7 @@ const AddCoffee = () => {
         const photoUrl = form.photoUrl.value;
         const newCoffee = { name, quantity, supplier, taste, category, details, photoUrl };
 
-        fetch('https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/coffee', {
+        fetch('https://coffee-store-server-7sx1m951r-saiful-islams-projects-e6e7facb.vercel.app/coffee', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

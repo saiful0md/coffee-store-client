@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <App></App>,
-        loader: () => fetch('https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/coffee'),
+        loader: () => fetch('https://coffee-store-server-7sx1m951r-saiful-islams-projects-e6e7facb.vercel.app/coffee'),
       },
       {
         path: 'addCoffee',
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path: 'updateCoffee/:id',
         element: <UpdateCoffee></UpdateCoffee>,
-        loader: ({ params }) => fetch(`https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/coffee/${params.id}`)
+        loader: ({ params }) => fetch(`https://coffee-store-server-7sx1m951r-saiful-islams-projects-e6e7facb.vercel.app/coffee/${params.id}`)
       },
       {
         path: '/singup',
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       {
         path: '/users',
         element: <Users></Users>,
-        loader: ()=> fetch('https://coffee-store-server-7xfqdr926-saiful-islams-projects-e6e7facb.vercel.app/users')
+        loader: ()=> fetch('https://coffee-store-server-7sx1m951r-saiful-islams-projects-e6e7facb.vercel.app/users')
       }
     ]
   }
